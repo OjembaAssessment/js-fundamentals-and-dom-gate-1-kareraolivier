@@ -24,8 +24,7 @@ const Highlighter = () => {
   let newcheck = sortedValues.slice(0, 5);
   console.log("newcheck", newcheck);
   console.log("pal", pal);
-  // const newSpan = document.createElement("span");
-  // newSpan.style.backgroundColor = green;
+  
   arr = [];
   for (let i = 0; i < pal.length; i++) {
     for (let j = 0; j < newcheck.length; j++) {
