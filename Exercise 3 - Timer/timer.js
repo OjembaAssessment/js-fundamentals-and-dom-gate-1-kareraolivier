@@ -15,6 +15,13 @@ const removeSec = (num) => {
   nbr -= num;
 };
 
+const startSec = (num) => {
+  nbr = num;
+};
+const resetSec = (num) => {
+  nbr = num;
+};
+
 const disablestyle = () => {
   document.getElementById("butto").setAttribute("style", "display:none");
 };

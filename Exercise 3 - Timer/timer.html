@@ -10,12 +10,22 @@
     <div id="myTimer"
         style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh; background-color: whitesmoke;">
         <h2 style="font-size: xx-large; color: black;">Exercise 3 - Timer</h2>
-        <p id="demo"
-            style="font-size: xx-large; font-family: Arial, Helvetica, sans-serif; background-color: white; padding: 2rem; border-radius: 5px; box-shadow: inset; color: black;">
-        </p>
-        <div id="butto" style="display: flex;justify-content: center; gap:4px;">
-            <button value="5" type="button" style="padding: 2px 4px;" onclick="removeSec(1)">-S</button>
-            <button type="button" style="padding: 2px 4px;" onclick="addSec(2)">+S</button>
+        <div style="display: flex; align-items: center; gap: 4;">
+            <button value="5" type="button" style="font-size: x-large;  padding: 2px 4px; height: 4rem; width: 4rem; "
+                onclick="removeSec(1)">-S</button>
+            <p id="demo"
+                style="cursor: pointer; font-size: xx-large; font-family: Arial, Helvetica, sans-serif; background-color: white; margin: 0 2rem; padding: 2rem; border-radius: 5px; box-shadow: inset; color: black; width: 10rem; text-align: center;">
+            </p>
+            <button type="button" style="font-size: x-large;  padding: 2px 4px; height: 4rem; width: 4rem; "
+                onclick="addSec(2)">+S</button>
+        </div>
+
+        <div id="butto" style="display: flex;justify-content: center; gap:4px; margin-top: 1rem;">
+
+            <button value="5" type="button" style="font-size: x-large;  padding: 2px 4px; height: 4rem; width: 10rem;"
+                onclick="startSec(20)">Start</button>
+            <button type="button" style="font-size: x-large;  padding: 2px 4px; height: 4rem;  width: 10rem"
+                onclick="resetSec(0)">Reset</button>
             <!-- <button type="button" style="padding: 2px 4px;" onclick="addnbr(15)">+15s</button> -->
         </div>
 
