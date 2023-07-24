@@ -24,13 +24,12 @@ const Highlighter = () => {
   let newcheck = sortedValues.slice(0, 5);
   console.log("newcheck", newcheck);
   console.log("pal", pal);
-  
+
   arr = [];
   for (let i = 0; i < pal.length; i++) {
     for (let j = 0; j < newcheck.length; j++) {
       if (pal[i] == newcheck[j]) {
-        pal[i] = `<span style='background-color:red'>${pal[i]} </span>`;
-        
+        pal[i] = `<span style='background-color:blue; color:white'>${pal[i]} </span>`;
       }
     }
     arr.push(pal[i]);
