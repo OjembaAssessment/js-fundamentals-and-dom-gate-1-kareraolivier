@@ -30,7 +30,7 @@ const Highlighter = () => {
     for (let j = 0; j < newcheck.length; j++) {
       if (pal[i] == newcheck[j]) {
         pal[i] = `<span style='background-color:red'>${pal[i]} </span>`;
-        arr.push(pal[i]);
+        
       }
     }
     arr.push(pal[i]);
