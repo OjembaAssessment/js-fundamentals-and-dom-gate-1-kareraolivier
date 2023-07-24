@@ -22,22 +22,22 @@ const Highlighter = () => {
     return obj[b] - obj[a];
   });
   let newcheck = sortedValues.slice(0, 5);
-  console.log(newcheck);
-  //   const newSpan = document.createElement("span");
-  //   newSpan.style.backgroundColor = green;
-  for (let i = 0; i < newcheck.length; i++) {
-    for (let j = 0; j < pal.length; j++) {
-      if (pal[j] == newcheck[i]) {
-        [
-          ...pal.replace(
-            pal[i],
-            `<span style='background-color:red'>${pal[i]} </span>`
-          ),
-        ];
+  console.log("newcheck", newcheck);
+  console.log("pal", pal);
+  // const newSpan = document.createElement("span");
+  // newSpan.style.backgroundColor = green;
+  arr = [];
+  for (let i = 0; i < pal.length; i++) {
+    for (let j = 0; j < newcheck.length; j++) {
+      if (pal[i] == newcheck[j]) {
+        pal[i] = `<span style='background-color:red'>${pal[i]} </span>`;
+        arr.push(pal[i]);
       }
     }
+    arr.push(pal[i]);
   }
-  console.log(pal);
-  document.getElementById("myParagraph").innerHTML = pal.join(" ");
+  console.log("may arr", arr);
+
+  document.getElementById("myParagraph").innerHTML = arr.join(" ");
 };
 Highlighter();
